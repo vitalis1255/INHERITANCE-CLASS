@@ -33,9 +33,10 @@ class checking_account(Account):#base class Account will be in the bracket of ch
 
 
 checking = checking_account("account\\balance.txt",1) #checking is the object that stores the inheritance class arguments
+#It is inheritance to call not base class
 #Inheritance is when you create sub-class out of a base class
 checking = checking_account("account\\izu.txt",1)#checking is the object instaniation of the class
-checking.transfer(900)
+checking.transfer(900)#How to call a class method
 checking.commit()
 print(checking.balance)
 print(checking.type)
